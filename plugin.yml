@@ -1,3 +1,17 @@
 name: IB-Jobs
-main: io.github.teamtemplate.IBJobs
+main: com.teamtemplate.io.IBJobs
 version: 0.1a
+commands:
+  initplayer:
+    decription: Initializes a Player manually.
+    usage: /<command> [Player-Name]
+    permission: IBJobs.initplayer
+    permission-message: You need permission in order to use this command!
+permissions:
+  IBJobs.*:
+    description: does something
+    children:
+      IBJobs.initplayer: true
+  IBJobs.initplayer:
+    description: does something
+    default: false
